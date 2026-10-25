@@ -81,15 +81,25 @@ img {
 /* Styling for each weekly challenge */
 
 .challenge {
-  background-color: #1e293b;
-  border: 1px solid #334155
-  border-radius: 14px;
-  padding: 28px;
-  margin-bottom: 32px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 28px;
 }
 
 .challenge h2 {
   margin-top: 0;
+}
+
+/* Text inside challenge boxes */
+
+.challenge h2 {
+  color: #1f2937;
+}
+
+.challenge p {
+  color: #475569;
 }
 
 /* Navigation bar */
