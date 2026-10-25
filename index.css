@@ -11,10 +11,9 @@ body {
   color: #333;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
-  margin: 0 auto;
-  max-width: 800px;
-  padding-top: 60px;
+  background-color: #f7f8fc;
+  max-width: 1000px;
+  padding-top: 48px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -71,6 +70,7 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
 
 /* Styling for each weekly challenge */
 
@@ -84,7 +84,7 @@ img {
 
 .challenge h2 {
   margin-top: 0;
-}
+
 
 
 
