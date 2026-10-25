@@ -71,4 +71,27 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+
+/* Styling for each weekly challenge */
+
+.challenge {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px;
+  margin-bottom: 32px;
+}
+
+.challenge h2 {
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
 }
