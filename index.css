@@ -91,6 +91,30 @@ img {
   margin-top: 0;
 }
 
+/* Navigation bar */
+
+.challenge-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.challenge-nav a {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 12px 20px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.challenge-nav a:hover {
+  background-color: #334155;
+  color: #ffffff;
+  text-decoration: none;
+}
 
 
 
