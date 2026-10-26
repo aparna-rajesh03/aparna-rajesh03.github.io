@@ -1,12 +1,15 @@
 <!doctype html>
 
 <html>
-
   <head>
     <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
 
     <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
     <!-- Try swapping to example3.css or another, and take a look at each example.css to see if you understand it-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>My Portfolio</title>
     <!-- The title displayed in the browser tab, not on the page itself -->
@@ -34,47 +37,86 @@
     <p style="margin-top: 0">
       <!-- we're setting the margin to 0px so the header and authour name are close together -->
       MPP-MPA Dual Degree Student |
-      <a href="https://www.linkedin.com/in/aparna-rajesh-9768631b4/">LinkedIn</a> |
+      <a href="https://www.linkedin.com/in/aparna-rajesh-9768631b4/"
+        >LinkedIn</a
+      >
+      |
       <a href="https://github.com/aparna-rajesh03">GitHub</a>
     </p>
-    <h3 class="small">
-      <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-      This page is my portfolio for the class PP434 - Automated Data Visualization. 
-    </h3>
+    <p class="small">
+      PP434 — Automated Data Visualization | Data Science Portfolio
+    </p>
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
       <div class="chart-description">
         <h2>Weekly challenges</h2>
+
+        <div class="section-divider"></div>
+
         <p>
           <!-- This is a paragraph, it's the main way to display text on a web page -->
-          This website is organised into different sections, with each section corresponding to the challenge for the respective week. 
+          This website is organised into different sections, with each section
+          corresponding to the challenge for the respective week.
         </p>
       </div>
 
       <!-- This element will contain our vega-lite chart -->
-     
+
       <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
     <nav class="challenge-nav">
-    <a href="#cc1">CC1 · Hosting</a>
-    <a href="#cc2">CC2 · Building</a>
-</nav>
-    <section id= "cc1" class = "challenge">
+      <a href="#cc1">CC1 · Hosting</a>
+      <a href="#cc2">CC2 · Building</a>
+      <a href="#cc3">CC3 · Policy</a>
+      <a href="#cc4">CC4 · Replication</a>
+      <a href="#cc5">CC5 · Data</a>
+      <a href="#cc6">CC6 · Dashboard</a>
+      <a href="#cc7">CC7 · Maps</a>
+    </nav>
+    <section id="cc1" class="challenge">
       <div class="chart-description">
         <h2>CC1. Hosting. Display charts in your own site</h2>
       </div>
 
-       <figure id="chart"></figure>
-
-      <!-- This element will contain our vega-lite chart -->
-      <figure id="chart2"></figure>
-      <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+      <div class="chart-grid">
+        <figure id="chart"></figure>
+        <figure id="chart2"></figure>
+      </div>
     </section>
 
     <section id="cc2" class="challenge">
       <h2>CC2. Building. Create your own visualisations</h2>
       <p>My visualisations for Challenge 2.</p>
+    </section>
+
+    <!-- CC3: Policy Debate -->
+    <section id="cc3" class="challenge">
+      <h2>CC3. Policy debate</h2>
+      <p>Two visualisations examining a public policy debate.</p>
+    </section>
+
+    <!-- CC4: Replication -->
+    <section id="cc4" class="challenge">
+      <h2>CC4. Replication</h2>
+      <p>Recreating and improving an existing visualisation.</p>
+    </section>
+    <!-- CC5: Accessing Data -->
+    <section id="cc5" class="challenge">
+      <h2>CC5. Accessing data: API and Scraper</h2>
+      <p>Working with APIs and web-scraped data.</p>
+    </section>
+
+    <!-- CC6: Devolution Dashboard -->
+    <section id="cc6" class="challenge">
+      <h2>CC6. UK Devolution Dashboard</h2>
+      <p>A dashboard examining regional devolution in the UK.</p>
+    </section>
+
+    <!-- CC7: Maps -->
+    <section id="cc7" class="challenge">
+      <h2>CC7. Maps</h2>
+      <p>Exploring regional data through geographic visualisations.</p>
     </section>
 
     <script>
