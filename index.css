@@ -189,3 +189,8 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+.chart-grid.single-chart {
+  display: flex;
+  justify-content: center;
+}

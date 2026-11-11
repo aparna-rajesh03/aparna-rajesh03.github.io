@@ -74,6 +74,7 @@
       <a href="#cc6">CC6 · Dashboard</a>
       <a href="#cc7">CC7 · Maps</a>
     </nav>
+   <!-- CC1: Hosting -->
     <section id="cc1" class="challenge">
       <div class="chart-description">
         <h2>CC1. Hosting. Display charts in your own site</h2>
@@ -84,7 +85,7 @@
         <figure id="chart2"></figure>
       </div>
     </section>
-
+  <!-- CC2: Building Visualisations -->
     <section id="cc2" class="challenge">
       <h2>CC2. Building. Create your own visualisations</h2>
       <p>My visualisations for Challenge 2.</p>
@@ -95,6 +96,23 @@
   </div>
 </section>
     </section>
+
+<!-- CC3: Altair Practice -->
+
+<section id="altair-practice" class="challenge">
+  <h2>Session 3: Altair Practice</h2>
+
+  <p>
+    This chart uses Robert Shiller's historical stock market data
+    to visualise the US price-to-earnings ratio over time.
+    It was created using Python's Altair library.
+  </p>
+
+  <div class="chart-grid single-chart">
+  <figure id="shiller-chart"></figure>
+  </div>
+</section>
+
 
     <!-- CC3: Policy Debate -->
     <section id="cc3" class="challenge">
@@ -142,6 +160,10 @@
       let cc2_chart2_spec = "cc2_chart2.json";
 
       vegaEmbed("#cc2_chart2", cc2_chart2_spec);
+
+      let shiller_chart_spec = "pe_ratio_chart.json";
+
+      vegaEmbed("#shiller-chart", shiller_chart_spec);
     </script>
   </body>
 </html>
