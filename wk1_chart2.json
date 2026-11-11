@@ -6,7 +6,7 @@
     "subtitle": ["Current International USD, PPP", "Source: World Bank"]
   },
 
-  "width": "450",
+  "width": 450,
   "height": 300,
 
   "data": {

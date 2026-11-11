@@ -88,6 +88,12 @@
     <section id="cc2" class="challenge">
       <h2>CC2. Building. Create your own visualisations</h2>
       <p>My visualisations for Challenge 2.</p>
+
+      <div class="chart-grid">
+    <figure id="cc2_chart1"></figure>
+    <figure id="cc2_chart2"></figure>
+  </div>
+</section>
     </section>
 
     <!-- CC3: Policy Debate -->
@@ -120,22 +126,22 @@
     </section>
 
     <script>
-      // This is a comment in JavaScript - it's a different language to HTML and CSS
+    
+      let figure_1_spec = "wk1_chart1.json"; 
 
-      let figure_1_spec = "wk1_chart1.json"; // We're storing the URL of the graph we want to display in a variable
-      // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+      vegaEmbed("#chart", figure_1_spec); 
 
-      vegaEmbed("#chart", figure_1_spec); // We're using the vegaEmbed function to put a graph in the element with id figure_1
-
-      let figure_2_spec = "wk1_chart2.json"; // We're storing the URL of the graph we want to display in a variable
+      let figure_2_spec = "wk1_chart2.json"; 
 
       vegaEmbed("#chart2", figure_2_spec);
 
-      // Do you want to add more graphs?
-      // try defining a new variable for figure_2_spec, adding VegaEmbed for Location2, and adding a new section in the HTML
-      // e.g.
-      // let figure_2_spec = ...
-      // vegaEmbed('#Location2', figure_2_spec)
+      let cc2_chart1_spec = "cc2_chart1.json";
+
+      vegaEmbed("#cc2_chart1", cc2_chart1_spec);
+
+      let cc2_chart2_spec = "cc2_chart2.json";
+
+      vegaEmbed("#cc2_chart2", cc2_chart2_spec);
     </script>
   </body>
 </html>

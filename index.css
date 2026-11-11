@@ -87,7 +87,7 @@ a {
 }
 
 a:hover {
-  color: #a5f3dc
+  color: #a5f3dc;
   text-decoration: underline;
 }
 

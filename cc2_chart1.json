@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/aparna-rajesh03/aparna-rajesh03.github.io/refs/heads/main/Sierra%20Leone%20-%20Life%20expectancy%20at%20birth.csv"
+  },
+  "title": {
+    "text": "Life Expectancy at Birth for Sierra Leone",
+    "subtitle": "Source: FRED, Federal Reserve Bank of St. Louis",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "fontSize": 16,
+    "subtitleColor": "gray"
+  },
+
+  "width": 450,
+  "height": 300,
+  "mark": { "type": "line", "color": "red" },
+  "encoding": {
+    "x": { "field": "Year", "type": "temporal" },
+    "y": { "field": "Age", "type": "quantitative" }
+  },
+  "config": {}
+}
