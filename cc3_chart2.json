@@ -1,0 +1,102 @@
+{
+  "config": { "view": { "continuousWidth": 300, "continuousHeight": 300 } },
+  "data": { "name": "data-dedbf5f57bde961862ca687a2def7369" },
+  "mark": { "type": "bar", "color": "#B54746" },
+  "encoding": {
+    "x": {
+      "axis": { "labelAngle": 0 },
+      "field": "Country Name",
+      "title": "Country",
+      "type": "nominal"
+    },
+    "y": {
+      "field": "Value",
+      "title": "Births per 1,000 women aged 15\u201319",
+      "type": "quantitative"
+    }
+  },
+  "height": 300,
+  "title": {
+    "text": "Adolescent fertility rates across India's neighbourhood, 2024",
+    "subtitle": "Source: World Bank, World Development Indicators",
+    "anchor": "start"
+  },
+  "width": 450,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-dedbf5f57bde961862ca687a2def7369": [
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Bangladesh",
+        "Country Code": "BGD",
+        "Year": 2024,
+        "Value": 70.813,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Bhutan",
+        "Country Code": "BTN",
+        "Year": 2024,
+        "Value": 8.712,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "China",
+        "Country Code": "CHN",
+        "Year": 2024,
+        "Value": 5.202,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "India",
+        "Country Code": "IND",
+        "Year": 2024,
+        "Value": 13.036,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Myanmar",
+        "Country Code": "MMR",
+        "Year": 2024,
+        "Value": 33.193,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Nepal",
+        "Country Code": "NPL",
+        "Year": 2024,
+        "Value": 66.489,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Pakistan",
+        "Country Code": "PAK",
+        "Year": 2024,
+        "Value": 39.856,
+        "Disaggregation": null
+      },
+      {
+        "Indicator Name": "Adolescent fertility rate (births per 1,000 women ages 15-19)",
+        "Indicator Code": "SP.ADO.TFRT",
+        "Country Name": "Sri Lanka",
+        "Country Code": "LKA",
+        "Year": 2024,
+        "Value": 14.719,
+        "Disaggregation": null
+      }
+    ]
+  }
+}

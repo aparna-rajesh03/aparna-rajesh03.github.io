@@ -117,7 +117,39 @@
     <!-- CC3: Policy Debate -->
     <section id="cc3" class="challenge">
       <h2>CC3. Policy debate</h2>
-      <p>Two visualisations examining a public policy debate.</p>
+      
+<h3>Should India continue funding adolescent reproductive-health programmes?</h3>
+
+<p>
+  India's adolescent fertility rate is comparatively low,
+  raising questions about whether existing programmes
+  should be maintained or resources redirected.
+</p>
+
+<div class="chart-grid">
+
+  <div>
+    <h3>The case for</h3>
+    <p>
+      India's adolescent fertility rate has declined dramatically
+      since 1960, but progress has slowed since 2016,
+      raising questions about sustaining further reductions.
+    </p>
+    <figure id="cc3-chart1"></figure>
+  </div>
+
+  <div>
+    <h3>The case against</h3>
+    <p>
+      India's 2024 rate is substantially below Bangladesh's and
+      Nepal's, raising questions about whether additional
+      funding should target other priorities.
+    </p>
+    <figure id="cc3-chart2"></figure>
+  </div>
+
+</div>
+
     </section>
 
     <!-- CC4: Replication -->
@@ -164,6 +196,12 @@
       let shiller_chart_spec = "pe_ratio_chart.json";
 
       vegaEmbed("#shiller-chart", shiller_chart_spec);
+
+      let cc3_chart1_spec = "cc3_chart1.json";
+      let cc3_chart2_spec = "cc3_chart2.json";
+
+      vegaEmbed("#cc3-chart1", cc3_chart1_spec);
+      vegaEmbed("#cc3-chart2", cc3_chart2_spec);
     </script>
   </body>
 </html>

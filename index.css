@@ -194,3 +194,17 @@ img {
   display: flex;
   justify-content: center;
 }
+
+#cc3 h3 {
+  color: #1f2933;
+}
+
+/* Align both CC3 charts horizontally */
+#cc3 .chart-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#cc3 .chart-grid > div > p {
+  min-height: 100px;
+}
