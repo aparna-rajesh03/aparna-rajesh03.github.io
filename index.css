@@ -208,3 +208,47 @@ img {
 #cc3 .chart-grid > div > p {
   min-height: 100px;
 }
+
+/* CC4 layout */
+#cc4 h3 {
+  color: #1f2937;
+}
+
+#cc4 .cc4-original {
+  display: block;
+  max-width: calc(50% - 16px);
+  margin: 20px 0 32px;
+}
+
+#cc4 .cc4-original img {
+  width: 100%;
+  max-width: none;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+#cc4 .chart-grid {
+  align-items: stretch;
+}
+
+#cc4 .chart-grid > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#cc4 .chart-grid figure {
+  margin-top: auto;
+  justify-content: flex-start;
+}
+
+#cc4-chart1 {
+  padding-bottom: 22px;
+}
+
+@media (max-width: 800px) {
+  #cc4 .cc4-original {
+    max-width: 100%;
+  }
+}

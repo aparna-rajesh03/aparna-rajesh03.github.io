@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 450,
+  "height": 300,
+  "title": {
+    "text": "India's total fertility rate fell by 41% between 1993 and 2021",
+    "subtitle": [
+      "Total fertility rate, average births per woman.",
+      "Source: Population Foundation of India"
+    ],
+    "anchor": "middle",
+    "frame": "group"
+  },
+  "data": {
+    "values": [
+      {
+        "Survey": "NFHS-1 (1992-93)",
+        "Year": 1993,
+        "TFR": 3.4
+      },
+      {
+        "Survey": "NFHS-2 (1998-99)",
+        "Year": 1999,
+        "TFR": 2.9
+      },
+      {
+        "Survey": "NFHS-3 (2005-06)",
+        "Year": 2006,
+        "TFR": 2.7
+      },
+      {
+        "Survey": "NFHS-4 (2015-16)",
+        "Year": 2016,
+        "TFR": 2.2
+      },
+      {
+        "Survey": "NFHS-5 (2019-21)",
+        "Year": 2021,
+        "TFR": 2
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "color": "#B54746",
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative",
+          "axis": {
+            "title": "Survey year",
+            "values": [1993, 1999, 2006, 2016, 2021],
+            "format": "d"
+          }
+        },
+        "y": {
+          "field": "TFR",
+          "type": "quantitative",
+          "scale": {
+            "domain": [0, 4]
+          },
+          "axis": {
+            "title": "Total fertility rate (births per woman)",
+            "minExtent": 40,
+            "maxExtent": 40
+          }
+        },
+        "tooltip": ["Survey", "Year", "TFR"]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "#B54746",
+        "size": 70
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "TFR",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -12,
+        "fontSize": 13
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "TFR",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "TFR",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    }
+  ],
+  "config": {}
+}

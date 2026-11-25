@@ -74,7 +74,7 @@
       <a href="#cc6">CC6 · Dashboard</a>
       <a href="#cc7">CC7 · Maps</a>
     </nav>
-   <!-- CC1: Hosting -->
+    <!-- CC1: Hosting -->
     <section id="cc1" class="challenge">
       <div class="chart-description">
         <h2>CC1. Hosting. Display charts in your own site</h2>
@@ -85,78 +85,112 @@
         <figure id="chart2"></figure>
       </div>
     </section>
-  <!-- CC2: Building Visualisations -->
+    <!-- CC2: Building Visualisations -->
     <section id="cc2" class="challenge">
       <h2>CC2. Building. Create your own visualisations</h2>
       <p>My visualisations for Challenge 2.</p>
 
       <div class="chart-grid">
-    <figure id="cc2_chart1"></figure>
-    <figure id="cc2_chart2"></figure>
-  </div>
-</section>
+        <figure id="cc2_chart1"></figure>
+        <figure id="cc2_chart2"></figure>
+      </div>
     </section>
 
-<!-- CC3: Altair Practice -->
+    <!-- CC3: Altair Practice -->
 
-<section id="altair-practice" class="challenge">
-  <h2>Session 3: Altair Practice</h2>
+    <section id="altair-practice" class="challenge">
+      <h2>Session 3: Altair Practice</h2>
 
-  <p>
-    This chart uses Robert Shiller's historical stock market data
-    to visualise the US price-to-earnings ratio over time.
-    It was created using Python's Altair library.
-  </p>
+      <p>
+        This chart uses Robert Shiller's historical stock market data to
+        visualise the US price-to-earnings ratio over time. It was created using
+        Python's Altair library.
+      </p>
 
-  <div class="chart-grid single-chart">
-  <figure id="shiller-chart"></figure>
-  </div>
-</section>
-
+      <div class="chart-grid single-chart">
+        <figure id="shiller-chart"></figure>
+      </div>
+    </section>
 
     <!-- CC3: Policy Debate -->
     <section id="cc3" class="challenge">
       <h2>CC3. Policy debate</h2>
-      
-<h3>Should India continue funding adolescent reproductive-health programmes?</h3>
 
-<p>
-  India's adolescent fertility rate is comparatively low,
-  raising questions about whether existing programmes
-  should be maintained or resources redirected.
-</p>
+      <h3>
+        Should India continue funding adolescent reproductive-health programmes?
+      </h3>
 
-<div class="chart-grid">
+      <p>
+        India's adolescent fertility rate is comparatively low, raising
+        questions about whether existing programmes should be maintained or
+        resources redirected.
+      </p>
 
-  <div>
-    <h3>The case for</h3>
-    <p>
-      India's adolescent fertility rate has declined dramatically
-      since 1960, but progress has slowed since 2016,
-      raising questions about sustaining further reductions.
-    </p>
-    <figure id="cc3-chart1"></figure>
-  </div>
+      <div class="chart-grid">
+        <div>
+          <h3>The case for</h3>
+          <p>
+            India's adolescent fertility rate has declined dramatically since
+            1960, but progress has slowed since 2016, raising questions about
+            sustaining further reductions.
+          </p>
+          <figure id="cc3-chart1"></figure>
+        </div>
 
-  <div>
-    <h3>The case against</h3>
-    <p>
-      India's 2024 rate is substantially below Bangladesh's and
-      Nepal's, raising questions about whether additional
-      funding should target other priorities.
-    </p>
-    <figure id="cc3-chart2"></figure>
-  </div>
-
-</div>
-
+        <div>
+          <h3>The case against</h3>
+          <p>
+            India's 2024 rate is substantially below Bangladesh's and Nepal's,
+            raising questions about whether additional funding should target
+            other priorities.
+          </p>
+          <figure id="cc3-chart2"></figure>
+        </div>
+      </div>
     </section>
 
     <!-- CC4: Replication -->
     <section id="cc4" class="challenge">
-      <h2>CC4. Replication</h2>
-      <p>Recreating and improving an existing visualisation.</p>
+      <h2>
+        CC4. Replication – Recreating and improving an existing visualisation.
+      </h2>
+
+      <h3>Original chart</h3>
+      <p>
+        The original chart from the Population Foundation of India, showing
+        India's total fertility rate across the five National Family Health
+        Surveys.
+      </p>
+
+      <div class="cc4-original">
+        <img
+          src="cc4_original.png"
+          alt="Original Population Foundation of India chart"
+        />
+      </div>
+
+      <div class="chart-grid">
+        <div>
+          <h3>My replication</h3>
+          <p>
+            A recreation of the original in Vega-Lite, keeping its axis title,
+            survey labels and evenly spaced categories.
+          </p>
+          <figure id="cc4-chart1"></figure>
+        </div>
+
+        <div>
+          <h3>My improved chart</h3>
+          <p>
+            I added a clearer headline, explanatory subtitle, source,
+            proportional survey spacing and data labels to improve accuracy,
+            context and readability.
+          </p>
+          <figure id="cc4-chart2"></figure>
+        </div>
+      </div>
     </section>
+
     <!-- CC5: Accessing Data -->
     <section id="cc5" class="challenge">
       <h2>CC5. Accessing data: API and Scraper</h2>
@@ -176,12 +210,11 @@
     </section>
 
     <script>
-    
-      let figure_1_spec = "wk1_chart1.json"; 
+      let figure_1_spec = "wk1_chart1.json";
 
-      vegaEmbed("#chart", figure_1_spec); 
+      vegaEmbed("#chart", figure_1_spec);
 
-      let figure_2_spec = "wk1_chart2.json"; 
+      let figure_2_spec = "wk1_chart2.json";
 
       vegaEmbed("#chart2", figure_2_spec);
 
@@ -202,6 +235,12 @@
 
       vegaEmbed("#cc3-chart1", cc3_chart1_spec);
       vegaEmbed("#cc3-chart2", cc3_chart2_spec);
+
+      let cc4_chart1_spec = "cc4_chart1_vegalite.json";
+      let cc4_chart2_spec = "cc4_chart2_vegalite.json";
+
+      vegaEmbed("#cc4-chart1", cc4_chart1_spec);
+      vegaEmbed("#cc4-chart2", cc4_chart2_spec);
     </script>
   </body>
 </html>
