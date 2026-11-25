@@ -193,8 +193,62 @@
 
     <!-- CC5: Accessing Data -->
     <section id="cc5" class="challenge">
-      <h2>CC5. Accessing data: API and Scraper</h2>
-      <p>Working with APIs and web-scraped data.</p>
+      <h2>CC5. Accessing data. APIs and scraping</h2>
+      <p>
+        A live chart of youth unemployment in India, pulled directly from the
+        World Bank Indicators API. The chart updates automatically whenever the
+        World Bank publishes new data.
+      </p>
+
+      <div class="chart-grid single-chart">
+        <figure id="api_chart"></figure>
+      </div>
+      <h3>How the API works</h3>
+
+      <p>
+        <strong>Base URL:</strong> https://api.worldbank.org/v2/ (version 2 of
+        the World Bank Indicators API). No API key is needed, and the API allows
+        browser requests (CORS), so the chart can call it directly.
+      </p>
+
+      <p><strong>Elements needed to call the data:</strong></p>
+      <ul>
+        <li><code>country/IND</code>: the country, as a 3-letter code</li>
+        <li>
+          <code>indicator/SL.UEM.1524.ZS</code>: the indicator code, here youth
+          unemployment (% of labour force aged 15-24, modelled ILO estimate)
+        </li>
+        <li>
+          <code>?format=json</code>: returns JSON instead of the default XML
+        </li>
+        <li>
+          <code>&amp;date=1991:2025</code>: the year range; the colon means
+          "from... to"
+        </li>
+        <li>
+          <code>&amp;per_page=100</code>: returns all rows on one page; the
+          default is 50
+        </li>
+      </ul>
+
+      <p>
+        <strong>Data returned:</strong> JSON, as a list with two parts: page
+        metadata first, then the data. The chart uses
+        <code>"property": "[1]"</code> to select the data. The data is largely
+        tidy, with one row per country per year, but not fully clean:
+        <code>country</code> and <code>indicator</code> are nested objects,
+        years are stored as text, some columns are empty, and years without data
+        return null.
+      </p>
+
+      <p>
+        <strong>Full URL:</strong>
+        <a
+          href="https://api.worldbank.org/v2/country/IND/indicator/SL.UEM.1524.ZS?format=json&amp;date=1991:2025&amp;per_page=100"
+        >
+          https://api.worldbank.org/v2/country/IND/indicator/SL.UEM.1524.ZS?format=json&amp;date=1991:2025&amp;per_page=100
+        </a>
+      </p>
     </section>
 
     <!-- CC6: Devolution Dashboard -->
@@ -241,6 +295,9 @@
 
       vegaEmbed("#cc4-chart1", cc4_chart1_spec);
       vegaEmbed("#cc4-chart2", cc4_chart2_spec);
+
+      let figure_3_spec = "cc5_api_chart.json";
+      vegaEmbed("#api_chart", figure_3_spec);
     </script>
   </body>
 </html>

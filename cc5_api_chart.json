@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "https://api.worldbank.org/v2/country/IND/indicator/SL.UEM.1524.ZS?format=json&date=1991:2025&per_page=100",
+    "format": {"property": "[1]"}
+  },
+  "width": 500,
+  "height": 350,
+  "title": {
+    "text": "Youth Unemployment in India (% of labour force aged 15-24)",
+    "subtitle": "Source - World Bank"
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "date", "type": "temporal", "title": ""},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "% of labour force aged 15-24"
+    },
+    "tooltip": [
+      {
+        "field": "date",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {
+        "field": "value",
+        "type": "quantitative",
+        "title": "Youth unemployment (%)"
+      }
+    ]
+  },
+  "config": {}
+}
