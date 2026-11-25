@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/aparna-rajesh03/aparna-rajesh03.github.io/refs/heads/main/literacy_rates_long.csv"
   },
-  "width": 650,
+  "width": "container",
   "height": 500,
   "title": {
     "text": "Literacy has risen in every Indian state since 1951",
@@ -13,6 +13,7 @@
   "params": [
     {
       "name": "pick",
+      "value": [{ "State/UT": "Keralam" }],
       "select": { "type": "point", "fields": ["State/UT"] },
       "bind": "legend"
     }

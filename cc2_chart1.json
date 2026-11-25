@@ -13,8 +13,8 @@
     "subtitleColor": "gray"
   },
 
-  "width": 450,
-  "height": 300,
+  "width": "container",
+  "height": 450,
   "mark": { "type": "line", "color": "red" },
   "encoding": {
     "x": { "field": "Year", "type": "temporal" },

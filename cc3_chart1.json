@@ -14,13 +14,13 @@
       "type": "quantitative"
     }
   },
-  "height": 300,
+  "height": 450,
   "title": {
     "text": "India's adolescent fertility rate has fallen dramatically",
     "subtitle": "Source: World Bank, World Development Indicators",
     "anchor": "start"
   },
-  "width": 450,
+  "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
     "data-b876e9b7c41d507a9b137e34adfb3e15": [

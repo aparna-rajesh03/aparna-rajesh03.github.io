@@ -15,13 +15,13 @@
       "type": "quantitative"
     }
   },
-  "height": 300,
+  "height": 450,
   "title": {
     "text": "Adolescent fertility rates across India's neighbourhood, 2024",
     "subtitle": "Source: World Bank, World Development Indicators",
     "anchor": "start"
   },
-  "width": 450,
+  "width": "container",
   "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
   "datasets": {
     "data-dedbf5f57bde961862ca687a2def7369": [
