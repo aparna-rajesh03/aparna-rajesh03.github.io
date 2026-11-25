@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/aparna-rajesh03/aparna-rajesh03.github.io/refs/heads/main/literacy_rates_long.csv"
+  },
+  "width": 650,
+  "height": 500,
+  "title": {
+    "text": "Literacy has risen in every Indian state since 1951",
+    "subtitle": "Literacy rate (%) by state and union territory, census years 1951-2011. Source: Census of India, via Wikipedia"
+  },
+  "mark": { "type": "line", "point": true },
+  "params": [
+    {
+      "name": "pick",
+      "select": { "type": "point", "fields": ["State/UT"] },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": { "field": "year", "type": "temporal", "title": "" },
+    "y": {
+      "field": "literacy_rate",
+      "type": "quantitative",
+      "title": "Literacy rate (%)"
+    },
+    "color": {
+      "field": "State/UT",
+      "type": "nominal",
+      "legend": {
+        "orient": "bottom",
+        "columns": 5,
+        "symbolLimit": 0,
+        "title": null
+      }
+    },
+    "opacity": { "condition": { "param": "pick", "value": 1 }, "value": 0.1 },
+    "tooltip": [
+      { "field": "State/UT", "type": "nominal", "title": "State/UT" },
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Census year"
+      },
+      {
+        "field": "literacy_rate",
+        "type": "quantitative",
+        "title": "Literacy rate (%)"
+      }
+    ]
+  },
+  "config": {}
+}

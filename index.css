@@ -124,6 +124,10 @@ img {
   color: #1f2937;
 }
 
+.challenge h3 {
+  color: #1f2937;
+}
+
 .challenge p {
   color: #475569;
 }
@@ -195,10 +199,6 @@ img {
   justify-content: center;
 }
 
-#cc3 h3 {
-  color: #1f2933;
-}
-
 /* Align both CC3 charts horizontally */
 #cc3 .chart-grid > div {
   display: flex;
@@ -210,9 +210,6 @@ img {
 }
 
 /* CC4 layout */
-#cc4 h3 {
-  color: #1f2933;
-}
 
 #cc4 .cc4-original {
   display: block;

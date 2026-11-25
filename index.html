@@ -249,6 +249,16 @@
           https://api.worldbank.org/v2/country/IND/indicator/SL.UEM.1524.ZS?format=json&amp;date=1991:2025&amp;per_page=100
         </a>
       </p>
+
+      <h2>Part 2: Scraping a website</h2>
+      <p>
+        Literacy rates for Indian states and union territories, scraped from
+        Wikipedia with Python.
+      </p>
+
+      <div class="chart-grid single-chart">
+        <figure id="scraper_chart"></figure>
+      </div>
     </section>
 
     <!-- CC6: Devolution Dashboard -->
@@ -298,6 +308,9 @@
 
       let figure_3_spec = "cc5_api_chart.json";
       vegaEmbed("#api_chart", figure_3_spec);
+
+      let figure_4_spec = "cc5_scraper_chart.json";
+      vegaEmbed("#scraper_chart", figure_4_spec);
     </script>
   </body>
 </html>

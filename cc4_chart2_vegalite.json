@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 450,
-  "height": 300,
+  "width": "container",
+  "height": 450,
   "title": {
     "text": "India's total fertility rate fell by 41% between 1993 and 2021",
     "subtitle": [
